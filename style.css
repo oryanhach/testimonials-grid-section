@@ -1,0 +1,146 @@
+:root {
+	/* Primary Colors */
+	--clr-primary-500: hsl(263, 55%, 52%);
+	--clr-primary-300: hsl(264, 82%, 80%);
+	--clr-primary-50: hsl(260, 100%, 95%);
+
+	/* Neutral Colors */
+	--clr-neutral-100: hsl(0, 0%, 100%);
+	--clr-neutral-200: hsl(214, 17%, 92%);
+	--clr-neutral-300: hsl(0, 0%, 81%);
+	--clr-neutral-400: hsl(224, 10%, 45%);
+	--clr-neutral-500: hsl(217, 19%, 35%);
+	--clr-neutral-900: hsl(219, 29%, 14%);
+	--clr-neutral-950: hsl(0, 0%, 7%);
+
+	/* Typography */
+	--ff-base: 'Barlow Semi Condensed', sans-serif;
+	--fw-regular: 500;
+	--fw-semibold: 600;
+	--fs-body: 13px;
+}
+
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+	margin: 0;
+}
+
+body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* General Styling */
+
+body {
+	padding: 4rem 2rem;
+}
+
+section {
+	display: grid;
+	gap: 2rem;
+}
+
+.testimonials__card {
+	border-radius: 0.5rem;
+	padding: 2rem 2rem;
+	font-family: var(--ff-base);
+}
+
+.testimonials__card:nth-of-type(1) {
+	background-color: var(--clr-primary-500);
+}
+
+.testimonials__card:nth-of-type(2) {
+	background-color: var(--clr-neutral-500);
+}
+
+.testimonials__card:nth-of-type(3) {
+	background-color: var(--clr-neutral-100);
+}
+
+.testimonials__card:nth-of-type(4) {
+	background-color: var(--clr-neutral-900);
+}
+
+.testimonials__card:nth-of-type(5) {
+	background-color: var(--clr-neutral-100);
+}
+
+.testimonials__card-header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.7rem;
+}
+
+img {
+	border-radius: 15rem;
+	height: 2rem;
+	margin-right: 1rem;
+}
+
+img:nth-of-type(1) {
+	border: 0.125rem solid var(--clr-primary-300);
+}
